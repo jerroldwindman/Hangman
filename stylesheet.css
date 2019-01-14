@@ -1,0 +1,163 @@
+.modal {
+    position: absolute;
+    height: 270px;
+    width: 500px;
+    top: 40px;
+    border-radius: 10%;
+    border: 1px solid black;
+    transform: translate(500px);
+    background-color: white;
+    font-family: Courier New;
+    z-index: 3;
+    text-align: center;
+}
+
+.modalText {
+	text-align: center;
+    position: relative;
+    top: 20px;
+    left: 90px;
+    width: 300px;
+}
+
+#introModal {
+	
+}
+
+#game {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#start {
+    position: relative;
+    height: 40px;
+    width: 80px;
+    top: 50px;
+}
+#difficultyText {
+    display: none;
+}
+
+
+#options {
+    display: none;
+}
+.option {
+    position: relative;
+    height: 50px;
+    width: 80px;
+    top: 50px;
+    border-radius: 10%;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+#hangman {
+    position: relative;
+    bottom: 270px;
+}
+#base {
+    height: 10px;
+    width: 260px;
+    background-color: black;
+    transform: translate(1220px, 300px);
+}
+
+#vertical {
+    height: 10px;
+    width: 300px;
+    background-color: black;
+    transform: translate(1200px, 140px) rotate(90deg);
+}
+
+#top {
+    height: 10px;
+    width: 200px;
+    background-color: black;
+    transform: translate(1150px, -15px);
+}
+
+#rope {
+    height: 4px;
+    width: 100px;
+    background-color: black;
+    transform: translate(1150px, 30px) rotate(90deg);
+}
+
+#head {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px black solid;
+    transform: translate(1180px, 76px);
+}
+
+#body {
+    height: 2px;
+    width: 70px;
+    background-color: black;
+    transform: translate(1163px, 110px) rotate(90deg);
+}
+
+#armL {
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    transform: translate(1171px, 100px) rotate(-45deg);
+}
+#armR {
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    transform: translate(1194px, 99px) rotate(45deg);
+}
+
+#footL {
+    height: 2px;
+    width: 40px;
+    background-color: black;
+    transform: translate(1170px, 155px) rotate(-70deg);
+}
+
+#footR {
+    height: 2px;
+    width: 40px;
+    background-color: black;
+    transform: translate(1185px, 155px) rotate(70deg);
+}
+
+#wrongLetterBox {
+    height: 200px;
+    width: 400px;
+    border: 1px black solid;
+    font-size: 50px;
+}
+
+#boxHeader {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+#uLineBox {
+    height: 50px;
+    width: 500px;
+    position: relative;
+    left: 500px;
+    bottom: 150px;
+}
+.uLine {
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    border-bottom: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 8px;
+    padding-right: 1px;
+}
+
+#gameover {
+    display: none;
+    
+}

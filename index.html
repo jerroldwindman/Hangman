@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="introModal" class="modal">
+        <div id="introText" class="modalText">
+            Hello and welcome to hangman 1.0 written by Jerrold Windman. All words pulled for this project are fetched using the datamuse API. 
+			More information can be found at <a href="https://www.datamuse.com/api/">datamuse.com</a>
+        </div>
+        <button id="start">
+            Start
+        </button>
+        
+        <div id="difficultyText" class="modalText">
+            Instructions:
+            Type a letter to guess if it is in the hangman word. Once the hangman is drawn, you lose.
+            <p>
+            Choose a difficulty to begin!
+            </p>
+        </div>
+        
+        <div id="options">
+             
+            <div id="easy" class="option" data-min=3 data-max=5>3-5 Letters</div>
+            <div id="medium" class="option" data-min="6" data-max="8">6-8 Letters</div>
+            <div id="hard" class="option" data-min="9" data-max="11">9-11 Letters</div>
+            
+        </div>
+		<div id="gameover" class="modalText">
+            <h2>
+            You <p id="result"></p>
+            </h2>
+            <p>
+            The word you were looking for was:
+            <p id="endWord"></p>
+            </p>
+            <button id="playAgain">
+				Play Again?
+			</button>
+        </div>
+		
+		
+    </div>
+
+    <div id="game">
+        <div id="boxHeader">INCORRECT GUESSES</div>
+        <div id="wrongLetterBox"></div>
+        
+        <div id="uLineBox"></div>
+
+        <div id="hangman">
+            <div id="base"></div>
+            <div id="vertical"></div>
+            <div id="top"></div>
+            <div id="rope"></div>
+            <div id="human">
+                <div id="head"></div>
+                <div id="body"></div>
+                <div id="armL"></div>
+                <div id="armR"></div>
+                <div id="footL"></div>
+                <div id="footR"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
